@@ -1,0 +1,151 @@
+/* basic tags */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body, html {
+    min-height: 100%;
+}
+body {
+    background-color: #141514;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.7em;
+    color: #A6A5BC;
+    background: rgb(57,87,60);
+    background: linear-gradient(114deg, rgba(57,87,60,1) 0%, rgba(60,119,71,1) 100%);
+}
+@media (max-width: 1000px) {
+    body {
+        font-size: 24px;
+    }
+}
+input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+}
+/*  GAME */
+#game {
+    text-align: center;
+}
+.roll-button {
+    background: #8ca387;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: 4px outset #c2d9bd;
+    border-radius: 16px;
+    font-weight: 600;
+    color: #e0fbdb;
+    box-shadow: 0 3px 18px #00000052;
+    cursor: pointer;
+}
+/* Dices*/
+.container-dice {
+    display: inline-block;
+    margin-top: 100px;
+    width: 300px;
+    margin: 50px auto 0 auto; }
+.dice-board {
+    padding: 80px 40px;
+}
+.dice {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transition: 1.2s;
+}
+
+.divot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border-radius: 20px;
+    background: #39333f;
+}
+.side {
+    background-color: #e5d2b1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.dice-two .side {
+    background-color: #39333f;
+}
+.dice-two .divot {
+    background-color: #f2ebce;
+}
+.side:nth-child(1) {
+    transform: translateZ(100px); }
+
+.side:nth-child(6) {
+    transform: rotateY(180deg) translateZ(100px); }
+
+.side:nth-child(3) {
+    transform: rotateY(90deg) translateZ(100px); }
+
+.side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(100px); }
+
+.side:nth-child(5) {
+    transform: rotateX(90deg) translateZ(100px); }
+
+.side:nth-child(2) {
+    transform: rotateX(-90deg) translateZ(100px); }
+
+.show-1 {
+    transform: rotateX(720deg) rotateZ(-720deg); }
+
+.show-6 {
+    transform: rotateX(-900deg) rotateZ(1080deg); }
+
+.show-3 {
+    transform: rotateY(-450deg) rotateZ(-1440deg); }
+
+.show-4 {
+    transform: rotateY(810deg) rotateZ(720deg); }
+
+.show-5 {
+    transform: rotateX(-810deg) rotateZ(-1080deg); }
+
+.show-2 {
+    transform: rotateX(450deg) rotateZ(-720deg); }
+
+/* Dice Dots */
+.two-1, .three-1, .four-1, .five-1, .six-1 {
+    top: 20%;
+    left: 20%; }
+
+.four-3, .five-3, .six-4 {
+    top: 20%;
+    left: 80%; }
+
+.one-1, .three-2, .five-5 {
+    top: 50%;
+    left: 50%; }
+
+.four-2, .five-2, .six-3 {
+    top: 80%;
+    left: 20%; }
+
+.two-2, .three-3, .four-4, .five-4, .six-6 {
+    top: 80%;
+    left: 80%; }
+
+.six-2 {
+    top: 50%;
+    left: 20%; }
+
+.six-5 {
+    top: 50%;
+    left: 80%; }
