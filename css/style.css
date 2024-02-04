@@ -53,7 +53,7 @@ img {
     width: 300px;
     margin: 50px auto 0 auto; }
 .dice-board {
-    padding: 60px 40px 40px;
+    padding: 40px;
 }
 .dice {
     position: relative;
